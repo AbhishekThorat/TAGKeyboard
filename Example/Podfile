@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TAGKeyboard_Example' do
+  pod 'TAGKeyboard', :path => '../'
+
+  target 'TAGKeyboard_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
