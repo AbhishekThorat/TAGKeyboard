@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EEFC1D92DB696125445220D7'
+               BlueprintIdentifier = 'AAA32C7B6E84313DC5FFFBBA'
                BlueprintName = 'TAGKeyboard'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TAGKeyboard.framework'>

@@ -2,7 +2,7 @@ import UIKit
 
 
 public class TAGKeyboard : UIViewController {
-
+    
     var viewWasMoved:Bool = false
     var keyBoardHeight :CGFloat = 0
     var activeView = UIView()
@@ -18,9 +18,9 @@ public class TAGKeyboard : UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-
-
-func keyboardWillShow(notification: NSNotification) {
+    
+    
+    func keyboardWillShow(notification: NSNotification) {
         
         let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue()
         let screenHeight = screenSize.height
@@ -32,19 +32,17 @@ func keyboardWillShow(notification: NSNotification) {
         if let test = (textFeildOrigin?.y) {
             let textFeildOriginWithHeight =  test + activeView.bounds.height
             print(textFeildOrigin)
-            let activeTextFieldRect: CGRect? = activeView.frame
             let textFeildPosition = screenHeight - (keyboardSize?.height)!
             if textFeildOriginWithHeight > textFeildPosition {
                 viewWasMoved = true
-                self.moveKeyboardDistance = ((textFeildOrigin?.y)! - textFeildPosition) + activeView.bounds.height
+                self.moveKeyboardDistance = textFeildOriginWithHeight > screenSize.height ? (test - textFeildPosition) + (screenSize.height - test) : (test - textFeildPosition) + activeView.bounds.height
                 self.view.frame.origin.y -= moveKeyboardDistance
                 keyBoardHeight = (keyboardSize?.height)!
-                
             } else {
                 viewWasMoved = false
             }
         }
-    
+        
     }
     
     func keyboardWillHide(notification: NSNotification) {
@@ -96,7 +94,7 @@ extension TAGKeyboard: UITextViewDelegate {
         }
         viewWasMoved = false
     }
-
+    
     public func textViewDidBeginEditing(textView: UITextView) {
     }
     
