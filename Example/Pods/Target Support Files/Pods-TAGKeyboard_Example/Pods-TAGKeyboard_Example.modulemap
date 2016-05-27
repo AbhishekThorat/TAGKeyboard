@@ -1,0 +1,6 @@
+framework module Pods_TAGKeyboard_Example {
+  umbrella header "Pods-TAGKeyboard_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+PODS:
+  - TAGKeyboard (0.1.0)
+
+DEPENDENCIES:
+  - TAGKeyboard (from `../`)
+
+EXTERNAL SOURCES:
+  TAGKeyboard:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TAGKeyboard: 439dd616cb4a0b4e42681d9c3059ad499216628e
+
+COCOAPODS: 0.39.0

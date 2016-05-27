@@ -1,0 +1,6 @@
+framework module TAGKeyboard {
+  umbrella header "TAGKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

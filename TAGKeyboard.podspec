@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TAGKeyboard'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TAGKeyboard.'
+  s.summary          = 'To solve the text area and keyboard issue in iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+To integrate TAGKeyboard in your project you need to install the pod file. Then just extend the your class by TAGKeyboard, and implement the text feild and text view delegate on that view controller.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/TAGKeyboard'
+  s.homepage         = 'https://github.com/AbhishekThorat/TAGKeyboard'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AbhishekThorat' => 'abhishek.thorat18@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/TAGKeyboard.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AbhishekThorat/TAGKeyboard.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
