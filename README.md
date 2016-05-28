@@ -13,9 +13,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 To integrate the TAGKeyboard in your project follow the steps :-
 #####
-1. "import TAGKeyboard".
-2.  extend your view controller with TAGKeyboard.
-    class ViewController: TAGKeyboard {}
+1. "import TAGKeyboard".<br />
+2.  extend your view controller with TAGKeyboard.<br />
+        class ViewController: TAGKeyboard {}
+<br />
 3. Implement the viewDidLoad() and call the super.viewDidLoad() and also set the delegate instance for respective text view and text fields.
 #####
 
