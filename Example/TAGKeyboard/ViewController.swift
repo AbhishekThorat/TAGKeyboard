@@ -35,8 +35,7 @@ class ViewController: TAGKeyboard {
     
 //Text View Delegate
     override func textViewShouldBeginEditing(textView: UITextView) -> Bool {
-        let boolean = super.textViewShouldBeginEditing(textView)
-        return boolean
+        return (super.textViewShouldBeginEditing(textView))
     }
     
     override func textViewDidEndEditing(textView: UITextView) {
@@ -49,8 +48,7 @@ class ViewController: TAGKeyboard {
     
 //Text feild Delegate
     override func textFieldShouldReturn(textField: UITextField) -> Bool {
-        let boolean = super.textFieldShouldReturn(textField)
-        return boolean
+        return (super.textFieldShouldReturn(textField))
     }
     
     override func textFieldDidBeginEditing(textField: UITextField) {
