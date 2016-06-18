@@ -63,26 +63,26 @@ To integrate the TAGKeyboard in your project follow the steps :-
     }
 #####   
 7. If you are using following method then need to call the super of particular one. This method are implemented in TAGKeyboard class. <br />
-#####
+
         7.1  If you want this method in your view then implement it in your view controller and call the parent func bu super.<br />
         main function:-
         <br />
-#####
+
         override public func viewDidLayoutSubviews() {
                 screenSize = UIScreen.mainScreen().bounds
         }
          <br />
-#####
+
         7.2 To disappear the keyboard on orientation change implemented this method in TAGKeyboard class. 
         (Can by pass this method)<br />
-#####
+
  override public func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         dismissKeyboard()
     }
      <br />
-#####
+
         7.3 dismissKeyboard() :- called only view.endEditing(). But need to implemented by user on particular view.     <br />
-#####
+
 8. Also user need to implement the tap gesture on their view controller separately.     <br />
 #####
 
