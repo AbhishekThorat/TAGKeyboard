@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import TAGKeyboard
+//import TAGKeyboard
 
 class Tests: XCTestCase {
     
