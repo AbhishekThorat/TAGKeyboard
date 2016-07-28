@@ -24,10 +24,8 @@ public class TAGKeyboard : UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
     }
     
-    
-    
     func keyboardWillShow(notification: NSNotification) {
-        let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue()
+        let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue()
         let screenHeight = screenSize.height
         let textFeildOrigin = activeView.superview?.convertPoint(activeView.frame.origin, toView: nil)
         if let test = (textFeildOrigin?.y) {
